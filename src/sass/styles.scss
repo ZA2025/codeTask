@@ -1,0 +1,182 @@
+
+$black: #000;
+$darkGray: #333;
+$lightGray: #d3d3d3;
+$white: #fff;
+$lightGreen: #00d0b9;
+$borderColor: #d9d5d5;
+$error: red;
+$purple: rgb(54 20 146);
+$purpleHover: rgb(101 63 170);
+
+@mixin focus-state {
+    &:focus {
+        outline: none;
+        border: 1px solid $darkGray;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.pageHeader {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    z-index: 1000;
+    top: 0;
+    background-color: $white;
+    border-bottom: 1px solid $borderColor;
+    &Link {
+        display: flex;
+        &:hover {
+            .pageHeaderLogo {
+                background-color: $purpleHover;
+            }
+        }
+    }
+    
+    &Logo {
+        width: 100%;
+        background-color: $purple;
+        max-width: 130px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+.pageContent {
+    width: 100%;
+    &Wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px;
+        @media screen and (min-width: 500px) {
+            padding: 40px;
+        }
+        @media screen and (min-width: 1024px) {
+            flex-direction: row; 
+        }
+        .title {
+            flex: 0 0 100%;
+        }
+    }
+    .instructions, .formSection {
+        flex: 1;
+    }
+      
+    .instructions {
+        width: 100%;
+        box-sizing: border-box;
+        @media screen and (min-width: 1024px) {
+            max-width: 50%;
+            padding: 0 50px 0 0;
+        }
+        &Label {
+            font-weight: bold;
+        }
+        &Item {
+            margin-bottom: 20px;
+        }
+        &List {
+            position: relative;
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
+    }
+    .formSection {
+        width: 100%;
+        margin-top: 25px;
+        border-top: 1px solid $borderColor;
+        @media screen and (min-width: 1024px) {
+            max-width: 50%;
+            border-top: none;
+            margin-top: 0;
+        }
+        &Title {
+            position: relative;
+        }
+        &Button {
+            width: auto;
+            display: block;
+            color: white;
+            padding: 0.875rem 1.25rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: $darkGray;
+            &:hover {
+                background-color: $black;
+            }
+            &:focus {
+                outline: none;
+                background-color: $black;
+            }
+            &Disabled {
+                background-color: $lightGray;
+                cursor: not-allowed;
+                &:hover {
+                    background-color: $lightGray;
+                }
+            }
+        }
+        &Name, &Email, &Telephone{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            @include focus-state;
+        }
+        &Request {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical; 
+            @include focus-state;
+        }
+        &Fieldset {
+            border: 1px solid $lightGray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        &Error {
+            color: $error;
+            margin-bottom: 15px;
+        }
+        &SuccessMsg {
+            background-color: $lightGreen;
+            padding: 10px 20px;
+            color: $darkGray;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    }
+}
+
+  

@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.pageHeader {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  z-index: 1000;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d5d5;
+}
+.pageHeaderLink {
+  display: flex;
+}
+.pageHeaderLink:hover .pageHeaderLogo {
+  background-color: #653faa;
+}
+.pageHeaderLogo {
+  width: 100%;
+  background-color: #361492;
+  max-width: 130px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pageContent {
+  width: 100%;
+}
+.pageContentWrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 500px) {
+  .pageContentWrap {
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pageContentWrap {
+    flex-direction: row;
+  }
+}
+.pageContentWrap .title {
+  flex: 0 0 100%;
+}
+.pageContent .instructions, .pageContent .formSection {
+  flex: 1;
+}
+.pageContent .instructions {
+  width: 100%;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1024px) {
+  .pageContent .instructions {
+    max-width: 50%;
+    padding: 0 50px 0 0;
+  }
+}
+.pageContent .instructionsLabel {
+  font-weight: bold;
+}
+.pageContent .instructionsItem {
+  margin-bottom: 20px;
+}
+.pageContent .instructionsList {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.pageContent .formSection {
+  width: 100%;
+  margin-top: 25px;
+  border-top: 1px solid #d9d5d5;
+}
+@media screen and (min-width: 1024px) {
+  .pageContent .formSection {
+    max-width: 50%;
+    border-top: none;
+    margin-top: 0;
+  }
+}
+.pageContent .formSectionTitle {
+  position: relative;
+}
+.pageContent .formSectionButton {
+  width: auto;
+  display: block;
+  color: white;
+  padding: 0.875rem 1.25rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #333;
+}
+.pageContent .formSectionButton:hover {
+  background-color: #000;
+}
+.pageContent .formSectionButton:focus {
+  outline: none;
+  background-color: #000;
+}
+.pageContent .formSectionButtonDisabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+.pageContent .formSectionButtonDisabled:hover {
+  background-color: #d3d3d3;
+}
+.pageContent .formSectionName, .pageContent .formSectionEmail, .pageContent .formSectionTelephone {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.pageContent .formSectionName:focus, .pageContent .formSectionEmail:focus, .pageContent .formSectionTelephone:focus {
+  outline: none;
+  border: 1px solid #333;
+}
+.pageContent .formSectionRequest {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.pageContent .formSectionRequest:focus {
+  outline: none;
+  border: 1px solid #333;
+}
+.pageContent .formSectionFieldset {
+  border: 1px solid #d3d3d3;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.pageContent .formSectionError {
+  color: red;
+  margin-bottom: 15px;
+}
+.pageContent .formSectionSuccessMsg {
+  background-color: #00d0b9;
+  padding: 10px 20px;
+  color: #333;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

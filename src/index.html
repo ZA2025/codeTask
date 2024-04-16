@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Developer Technical Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="pageHeader">
+        <a class="pageHeaderLink" href="https://www.geronimo.io/">
+            <img src="images/geronimo-logo-1.png" alt="geronimo logo" class="pageHeaderLogo">
+        </a>
+    </header>
+    <main class="pageContent">
+        <div class="pageContentWrap">
+            <h1 class="title">Request Information Form</h1>
+            <section id="instructionsSection" class="instructions" role="region">
+                <h2 class="instructionsTitle">Instructions</h2>
+                <ul class="instructionsList" role="list">
+                    <li class="instructionsItem" role="listitem">
+                        <p><strong class="instructionsLabel">Name:</strong> Please enter your full name. <span class="required">Name field is required.</span></p>
+                    </li>
+                    <li class="instructionsItem" role="listitem">
+                        <p><strong class="instructionsLabel">Email:</strong> Please enter a valid email address. <span class="required">Email field is required.</span></p>
+                    </li>
+                    <li class="instructionsItem" role="listitem">
+                        <p><strong class="instructionsLabel">Telephone:</strong> Please enter your telephone number. Phone field is optional.</p>
+                    </li>
+                    <li class="instructionsItem" role="listitem">
+                        <p><strong class="instructionsLabel">Request:</strong> Please enter your request or comment in this field. Request field is optional.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="formSection" tabindex="0">
+                <h2 class="formSectionTitle">Request Form</h2>
+                <form id="formId">
+                    <fieldset class="formSectionFieldset">
+                        <legend>Contact Information</legend>
+                        <label for="name">Name: <span class="required">*</span></label>
+                        <input class="formSectionName" type="text" id="name" name="name" aria-describedby="name" placeholder="Enter your name" required>
+                
+                        <label for="email">Email: <span class="required">*</span></label>
+                        <input class="formSectionEmail" type="email" id="email" name="email" aria-describedby="email" placeholder="Enter your email" required>
+                
+                        <label for="phone">Telephone (optional):</label>
+                        <input class="formSectionTelephone" type="tel" id="phone" name="phone" aria-describedby="phone" placeholder="Enter your phone number">
+                    </fieldset>
+                    <fieldset class="formSectionFieldset">
+                        <legend>Request Information </legend>
+                        <label for="request">Enter your request (optional):</label>
+                        <textarea class="formSectionRequest" id="request" name="request" rows="4" cols="50" aria-describedby="request" placeholder="Enter your request"></textarea>
+                    </fieldset>
+                    <button class="formSectionButton" type="submit">SUBMIT</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="js/demo2.js"></script>
+</body>
+</html>
