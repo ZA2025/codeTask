@@ -16,11 +16,7 @@ class FormValidation {
 
 		if (!errorElement) {
 			let div = document.createElement('div');
-<<<<<<< HEAD
-			div.id = elementId + 'Error';
-=======
 			div.id = `${elementId}Error`;
->>>>>>> 2a8450f (button style)
 			div.className = 'formSectionError';
 			element.parentNode.insertBefore(div, element.nextSibling);
 			errorElement = div;
