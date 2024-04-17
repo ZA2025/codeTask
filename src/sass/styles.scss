@@ -122,11 +122,18 @@ p {
             padding: 0.875rem 1.25rem;
             margin: 0.5rem 0;
             border: none;
+<<<<<<< HEAD
             border-radius: 4px;
             cursor: pointer;
             background-color: $darkGray;
             &:hover {
                 background-color: $black;
+=======
+            cursor: pointer;
+            background-color: $purple;
+            &:hover {
+                background-color: $purpleHover;
+>>>>>>> 2a8450f (button style)
             }
             &:focus {
                 outline: none;
