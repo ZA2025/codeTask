@@ -111,20 +111,11 @@ p {
   padding: 0.875rem 1.25rem;
   margin: 0.5rem 0;
   border: none;
-<<<<<<< HEAD
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #333;
-}
-.pageContent .formSectionButton:hover {
-  background-color: #000;
-=======
   cursor: pointer;
   background-color: #361492;
 }
 .pageContent .formSectionButton:hover {
   background-color: #653faa;
->>>>>>> 2a8450f (button style)
 }
 .pageContent .formSectionButton:focus {
   outline: none;
@@ -133,9 +124,6 @@ p {
 .pageContent .formSectionButtonDisabled {
   background-color: #d3d3d3;
   cursor: not-allowed;
-}
-.pageContent .formSectionButtonDisabled:hover {
-  background-color: #d3d3d3;
 }
 .pageContent .formSectionName, .pageContent .formSectionEmail, .pageContent .formSectionTelephone {
   width: 100%;

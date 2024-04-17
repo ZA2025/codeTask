@@ -122,11 +122,6 @@ p {
             padding: 0.875rem 1.25rem;
             margin: 0.5rem 0;
             border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            background-color: $darkGray;
-            &:hover {
-                background-color: $black;
             cursor: pointer;
             background-color: $purple;
             &:hover {
@@ -139,9 +134,6 @@ p {
             &Disabled {
                 background-color: $lightGray;
                 cursor: not-allowed;
-                &:hover {
-                    background-color: $lightGray;
-                }
             }
         }
         &Name, &Email, &Telephone{
