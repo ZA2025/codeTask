@@ -29,7 +29,7 @@ p {
   display: flex;
 }
 .pageHeaderLink:hover .pageHeaderLogo {
-  background-color: #653faa;
+  background-color: #1c0950;
 }
 .pageHeaderLogo {
   width: 100%;
@@ -100,6 +100,8 @@ p {
 }
 .pageContent .formSection {
   width: 100%;
+  background-color: #feeaef;
+  padding: 50px;
 }
 @media screen and (min-width: 1024px) {
   .pageContent .formSection {
@@ -130,7 +132,7 @@ p {
   background-color: #361492;
 }
 .pageContent .formSectionButton:hover {
-  background-color: #653faa;
+  background-color: #1c0950;
 }
 .pageContent .formSectionButton:focus {
   outline: none;
@@ -143,7 +145,7 @@ p {
 .pageContent .formSectionName, .pageContent .formSectionEmail, .pageContent .formSectionTelephone {
   border: 0;
   width: 100%;
-  padding: 12px 0;
+  padding: 12px 10px;
   margin: 8px 0;
   display: inline-block;
   border-bottom: 1px solid #ccc;

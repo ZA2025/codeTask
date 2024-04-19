@@ -7,7 +7,9 @@ $lightGreen: #00d0b9;
 $borderColor: #d9d5d5;
 $error: red;
 $purple: rgb(54 20 146);
-$purpleHover: rgb(101 63 170);
+$purpleHover: #1c0950;
+$pink: #f7345e;
+$bgPink: #feeaef;
 
 @mixin focus-state {
     &:focus {
@@ -114,6 +116,8 @@ p {
     }
     .formSection {
         width: 100%;
+        background-color: $bgPink;
+        padding: 50px;
         @media screen and (min-width: 1024px) {
             max-width: 50%;
             margin-top: 0;
@@ -154,12 +158,11 @@ p {
         &Name, &Email, &Telephone{
             border: 0;
             width: 100%;
-            padding: 12px 0;
+            padding: 12px 10px;
             margin: 8px 0;
             display: inline-block;
             border-bottom: 1px solid #ccc;
             box-sizing: border-box;
-            
             color: $darkGray;
             @include focus-state;
         }
