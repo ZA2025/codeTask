@@ -85,9 +85,11 @@ p {
     .instructions {
         width: 100%;
         box-sizing: border-box;
+        margin-bottom: 50px;
         @media screen and (min-width: 1024px) {
             max-width: 50%;
             padding: 0 50px 0 0;
+            margin-bottom: unset;
         }
         &Label {
             font-weight: bold;
@@ -112,10 +114,8 @@ p {
     }
     .formSection {
         width: 100%;
-        border-top: 1px solid $borderColor;
         @media screen and (min-width: 1024px) {
             max-width: 50%;
-            border-top: none;
             margin-top: 0;
         }
         &Title {

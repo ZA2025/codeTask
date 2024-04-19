@@ -69,11 +69,13 @@ p {
 .pageContent .instructions {
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
   .pageContent .instructions {
     max-width: 50%;
     padding: 0 50px 0 0;
+    margin-bottom: unset;
   }
 }
 .pageContent .instructionsLabel {
@@ -98,12 +100,10 @@ p {
 }
 .pageContent .formSection {
   width: 100%;
-  border-top: 1px solid #d9d5d5;
 }
 @media screen and (min-width: 1024px) {
   .pageContent .formSection {
     max-width: 50%;
-    border-top: none;
     margin-top: 0;
   }
 }
