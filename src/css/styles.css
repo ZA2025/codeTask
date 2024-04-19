@@ -107,13 +107,14 @@ p {
 .pageContent .formSection {
   width: 100%;
   background-color: #feeaef;
-  padding: 50px;
+  padding: 20px;
   box-sizing: border-box;
 }
 @media screen and (min-width: 1024px) {
   .pageContent .formSection {
     max-width: 50%;
     margin-top: 0;
+    padding: 50px;
   }
 }
 .pageContent .formSectionTitle {

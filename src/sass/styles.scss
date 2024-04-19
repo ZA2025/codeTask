@@ -121,11 +121,12 @@ p {
     .formSection {
         width: 100%;
         background-color: $bgPink;
-        padding: 50px;
+        padding: 20px;
         box-sizing: border-box;
         @media screen and (min-width: 1024px) {
             max-width: 50%;
             margin-top: 0;
+            padding: 50px;
         }
         &Title {
             position: relative;
