@@ -118,6 +118,7 @@ p {
         width: 100%;
         background-color: $bgPink;
         padding: 50px;
+        box-sizing: border-box;
         @media screen and (min-width: 1024px) {
             max-width: 50%;
             margin-top: 0;
