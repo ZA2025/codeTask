@@ -91,13 +91,10 @@ class FormValidation {
 			div.textContent = 'Form submitted successfully. Thank you!';
 			div.classList.add('formSectionSuccessMsg');
 			div.setAttribute('role', 'alert');
-			div.setAttribute('aria-live', 'polite');
 			this.form.parentNode.insertBefore(div, this.form);
 			this.form.reset();
 
-			// Disable the submit button
 			this.form.querySelector('.formSectionButton').setAttribute('disabled', 'true');
-			// greyed out button
 			this.form.querySelector('.formSectionButton').classList.add('formSectionButtonDisabled');
 		}
 	}

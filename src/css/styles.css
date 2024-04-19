@@ -12,6 +12,7 @@ h1 {
 
 p {
   font-size: 1rem;
+  line-height: 2;
 }
 
 .pageHeader {
@@ -51,7 +52,7 @@ p {
 }
 @media screen and (min-width: 500px) {
   .pageContentWrap {
-    padding: 40px;
+    padding: 80px 40px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -89,9 +90,14 @@ p {
   padding: 0;
   height: auto;
 }
+.pageContent .instructionsTitle {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
 .pageContent .formSection {
   width: 100%;
-  margin-top: 25px;
   border-top: 1px solid #d9d5d5;
 }
 @media screen and (min-width: 1024px) {
@@ -103,6 +109,15 @@ p {
 }
 .pageContent .formSectionTitle {
   position: relative;
+}
+.pageContent .formSectionLabel {
+  color: #333;
+}
+.pageContent .formSectionGroup {
+  margin-bottom: 30px;
+}
+.pageContent .formSectionGroup:last-of-type {
+  margin-bottom: 0;
 }
 .pageContent .formSectionButton {
   width: auto;
@@ -126,39 +141,35 @@ p {
   cursor: not-allowed;
 }
 .pageContent .formSectionName, .pageContent .formSectionEmail, .pageContent .formSectionTelephone {
+  border: 0;
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 0;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-bottom: 1px solid #ccc;
   box-sizing: border-box;
+  color: #333;
 }
 .pageContent .formSectionName:focus, .pageContent .formSectionEmail:focus, .pageContent .formSectionTelephone:focus {
   outline: none;
-  border: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 .pageContent .formSectionRequest {
+  border: 0;
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 0;
   margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   resize: vertical;
 }
 .pageContent .formSectionRequest:focus {
   outline: none;
-  border: 1px solid #333;
-}
-.pageContent .formSectionFieldset {
-  border: 1px solid #d3d3d3;
-  padding: 20px;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
 }
 .pageContent .formSectionError {
   color: red;
-  margin-bottom: 15px;
+  font-size: 12px;
 }
 .pageContent .formSectionSuccessMsg {
   background-color: #00d0b9;
