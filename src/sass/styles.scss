@@ -112,6 +112,10 @@ p {
             margin: 0;
             padding: 0;
             margin-bottom: 30px;
+            padding-top: 50px;
+            @media screen and (min-width: 1024px) {
+                padding-top: 0;
+            }
         }
     }
     .formSection {
