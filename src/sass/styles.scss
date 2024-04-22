@@ -10,6 +10,7 @@ $purple: rgb(54 20 146);
 $purpleHover: #1c0950;
 $pink: #f7345e;
 $bgPink: #feeaef;
+$bgGray: #f8f8f8;
 
 @mixin focus-state {
     &:focus {
@@ -117,16 +118,72 @@ p {
                 padding-top: 0;
             }
         }
+        .contact {
+            &Title {
+                font-weight: bold;
+            }
+            &List {
+                list-style: none;
+                padding: 0;
+                margin: 20px 0;
+            }
+            &Item {
+                margin-bottom: 10px;
+            }
+        }
+        .social {
+            position: relative;
+            &List {
+                position: relative; 
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                width: 100%;
+                height: auto;
+                padding: 0;
+                margin: 0;
+                gap: 1rem;
+            }
+            &ListItem {
+                position: relative;
+                display: flex;
+                width: 20px;
+                height: 20px;
+                .icon {
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    //fill: #fff;
+                }
+            }
+            &ListItemLink {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg { 
+                    width: 20px;
+                    height: 20px;
+                    use {
+                        fill: rgb(33, 32, 32);
+                    }
+                }
+            }
+        }
     }
     .formSection {
         width: 100%;
-        background-color: $bgPink;
+        background-color: $bgGray;
         padding: 20px;
         box-sizing: border-box;
         @media screen and (min-width: 1024px) {
             max-width: 50%;
             margin-top: 0;
-            padding: 50px;
+            padding: 0 30px 30px 30px;
         }
         &Title {
             position: relative;
@@ -143,13 +200,15 @@ p {
         &Button {
             width: auto;
             display: block;
-            color: white;
+            color: $darkGray;
             padding: 0.875rem 1.25rem;
             margin: 0.5rem 0;
             border: none;
             cursor: pointer;
-            background-color: $purple;
+            background-color: white;
+            border: 2px solid $purple;
             &:hover {
+                color: #fff;
                 background-color: $purpleHover;
             }
             &:focus {
@@ -170,6 +229,7 @@ p {
             border-bottom: 1px solid #ccc;
             box-sizing: border-box;
             color: $darkGray;
+            background-color: transparent;
             @include focus-state;
         }
         &Request {
@@ -180,7 +240,7 @@ p {
             border-bottom: 1px solid #ccc;
             box-sizing: border-box;
             resize: vertical;
-            
+            background-color: transparent;
             @include focus-state;
         }
         &Error {
@@ -196,5 +256,5 @@ p {
         }
     }
 }
-
+ 
   

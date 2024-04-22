@@ -104,9 +104,62 @@ p {
     padding-top: 0;
   }
 }
+.pageContent .instructions .contactTitle {
+  font-weight: bold;
+}
+.pageContent .instructions .contactList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.pageContent .instructions .contactItem {
+  margin-bottom: 10px;
+}
+.pageContent .instructions .social {
+  position: relative;
+}
+.pageContent .instructions .socialList {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+.pageContent .instructions .socialListItem {
+  position: relative;
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+.pageContent .instructions .socialListItem .icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.pageContent .instructions .socialListItemLink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageContent .instructions .socialListItemLink svg {
+  width: 20px;
+  height: 20px;
+}
+.pageContent .instructions .socialListItemLink svg use {
+  fill: #212020;
+}
 .pageContent .formSection {
   width: 100%;
-  background-color: #feeaef;
+  background-color: #f8f8f8;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -114,7 +167,7 @@ p {
   .pageContent .formSection {
     max-width: 50%;
     margin-top: 0;
-    padding: 50px;
+    padding: 0 30px 30px 30px;
   }
 }
 .pageContent .formSectionTitle {
@@ -132,14 +185,16 @@ p {
 .pageContent .formSectionButton {
   width: auto;
   display: block;
-  color: white;
+  color: #333;
   padding: 0.875rem 1.25rem;
   margin: 0.5rem 0;
   border: none;
   cursor: pointer;
-  background-color: #361492;
+  background-color: white;
+  border: 2px solid #361492;
 }
 .pageContent .formSectionButton:hover {
+  color: #fff;
   background-color: #1c0950;
 }
 .pageContent .formSectionButton:focus {
@@ -159,6 +214,7 @@ p {
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   color: #333;
+  background-color: transparent;
 }
 .pageContent .formSectionName:focus, .pageContent .formSectionEmail:focus, .pageContent .formSectionTelephone:focus {
   outline: none;
@@ -172,6 +228,7 @@ p {
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   resize: vertical;
+  background-color: transparent;
 }
 .pageContent .formSectionRequest:focus {
   outline: none;
